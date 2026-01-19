@@ -1,0 +1,134 @@
+@page "/chat"
+@rendermode InteractiveServer
+@inject HttpClient Http
+@using Python.UI.Utils
+@using System.Text.Json
+
+
+<h3>Python AI Chat</h3>
+
+<div style="margin-bottom:10px;">
+    <input style="width:70%"
+           @bind="userInput"
+           @bind:event="oninput"
+           placeholder="Type your message..." />
+    <button @onclick="Send" disabled="@isLoading">Send</button>
+</div>
+
+<button @onclick="Clear">Clear</button>
+
+<div class="chat-container">
+    @foreach (var msg in messages)
+    {
+        <div class="@(msg.Role == "User" ? "chat-user" : "chat-ai")">
+            <div class="chat-role">
+                @(msg.Role == "User" ? "You" : "AI")
+            </div>
+            <div>
+                @((MarkupString)Markdown.ToHtml(msg.Content))
+            </div>
+        </div>
+    }
+</div>
+
+
+
+
+@code {
+
+    class ChatMessage
+    {
+        public string Role { get; set; } = "";
+        public string Content { get; set; } = "";
+    }
+
+    private string userInput = "";
+    private bool isLoading;
+
+    private List<ChatMessage> messages = new();
+
+    private async Task SendOld()
+    {
+        if (string.IsNullOrWhiteSpace(userInput))
+            return;
+
+        var userMessage = userInput;
+        userInput = "";
+
+        messages.Add(new ChatMessage { Role = "User", Content = userMessage });
+
+        isLoading = true;
+
+        try
+        {
+            var historyText = string.Join(
+                "\n",
+                messages.Select(m => $"{m.Role}: {m.Content}")
+            );
+
+            var url =
+                $"http://127.0.0.1:8000/ask?prompt={Uri.EscapeDataString(historyText)}";
+
+            var result = await Http.PostAsync(url, null);
+            var json = await result.Content.ReadAsStringAsync();
+
+            using var doc = System.Text.Json.JsonDocument.Parse(json);
+            var aiResponse =
+                doc.RootElement.GetProperty("response").GetString() ?? "";
+
+            messages.Add(new ChatMessage
+            {
+                Role = "AI",
+                Content = aiResponse
+            });
+        }
+        finally
+        {
+            isLoading = false;
+        }
+    }
+
+    private void Clear()
+    {
+        messages.Clear();
+    }
+
+
+    private async Task Send()
+    {
+        if (string.IsNullOrWhiteSpace(userInput))
+            return;
+
+        var userMessage = userInput;
+        userInput = "";
+
+        messages.Add(new ChatMessage { Role = "User", Content = userMessage });
+
+        var aiMessage = new ChatMessage { Role = "AI", Content = "Thinking..." };
+        messages.Add(aiMessage);
+
+        try
+        {
+            var url =
+                $"http://127.0.0.1:8000/ask?prompt={Uri.EscapeDataString(userMessage)}";
+
+            var response = await Http.PostAsync(url, null);
+            response.EnsureSuccessStatusCode();
+
+            var json = await response.Content.ReadAsStringAsync();
+            using var doc = JsonDocument.Parse(json);
+
+            aiMessage.Content =
+                doc.RootElement.GetProperty("response").GetString() ?? "";
+        }
+        catch
+        {
+            aiMessage.Content = "Something went wrong.";
+        }
+
+        await InvokeAsync(StateHasChanged);
+    }
+
+
+
+}
