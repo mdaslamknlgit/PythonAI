@@ -34,3 +34,4 @@ D:\MdAslam\Python\Code\PythonAI\Python.UI\obj\Debug\net8.0\staticwebassets.upToD
 D:\MdAslam\Python\Code\PythonAI\Python.UI\obj\Debug\net8.0\Python.UI.csproj.AssemblyReference.cache
 D:\MdAslam\Python\Code\PythonAI\Python.UI\bin\Debug\net8.0\Markdig.dll
 D:\MdAslam\Python\Code\PythonAI\Python.UI\obj\Debug\net8.0\Python.UI.csproj.Up2Date
+D:\MdAslam\Python\Code\PythonAI\Python.UI\obj\Debug\net8.0\Python.UI.sourcelink.json

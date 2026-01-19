@@ -1,37 +1,68 @@
+﻿using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Python.UI.Components;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddHttpClient();
+builder.Services.AddHttpContextAccessor();
 
+builder.Services
+    .AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(options =>
+    {
+        options.LoginPath = "/login";
+        options.AccessDeniedPath = "/login";
+    });
 
-// Add services to the container.
+builder.Services.AddAuthorization();
+
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
-builder.Services.AddServerSideBlazor()
-    .AddCircuitOptions(options =>
-    {
-        options.DetailedErrors = true;
-    });
-
+builder.Services.AddServerSideBlazor();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
-{
-    app.UseExceptionHandler("/Error", createScopeForErrors: true);
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-    app.UseHsts();
-}
-
 app.UseHttpsRedirection();
-
 app.UseStaticFiles();
 app.UseAntiforgery();
+
+app.UseAuthentication();
+app.UseAuthorization();
+
+/* UI LOGIN ENDPOINT – ONLY CREATES COOKIE */
+app.MapPost("/login", async (
+    HttpContext context,
+    UiLoginRequest request
+) =>
+{
+    var claims = new[]
+    {
+        new System.Security.Claims.Claim(
+            System.Security.Claims.ClaimTypes.Name,
+            request.Username
+        )
+    };
+
+    var identity = new System.Security.Claims.ClaimsIdentity(
+        claims,
+        CookieAuthenticationDefaults.AuthenticationScheme
+    );
+
+    var principal = new System.Security.Claims.ClaimsPrincipal(identity);
+
+    await context.SignInAsync(
+        CookieAuthenticationDefaults.AuthenticationScheme,
+        principal
+    );
+
+    return Results.Ok();
+});
 
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode();
 
 app.Run();
+
+record UiLoginRequest(string Username);

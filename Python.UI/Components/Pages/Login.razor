@@ -1,0 +1,75 @@
+﻿@page "/login"
+@attribute [AllowAnonymous]
+@rendermode InteractiveServer
+
+@using Microsoft.AspNetCore.Authorization
+@inject HttpClient Http
+@inject NavigationManager Nav
+
+<div class="login-container">
+    <div class="login-card">
+        <h2>Sign in</h2>
+
+        <input placeholder="Username"
+               @bind="username"
+               @bind:event="oninput" />
+
+        <input type="password"
+               placeholder="Password"
+               @bind="password"
+               @bind:event="oninput" />
+
+        <button @onclick="DoLogin">Login</button>
+
+        @if (!string.IsNullOrEmpty(error))
+        {
+            <div class="login-error">@error</div>
+        }
+    </div>
+</div>
+
+@code {
+    private string username = "";
+    private string password = "";
+    private string error = "";
+
+    private async Task DoLogin()
+    {
+        error = "";
+
+        try
+        {
+
+            // 1. Authenticate with Python API
+            var pythonResponse = await Http.PostAsync(
+                $"http://127.0.0.1:8000/auth/login?username={Uri.EscapeDataString(username)}&password={Uri.EscapeDataString(password)}",
+                null
+            );
+
+            if (!pythonResponse.IsSuccessStatusCode)
+            {
+                error = "Invalid username or password";
+                return;
+            }
+
+            // 2. Sign in Blazor (cookie)
+            var uiResponse = await Http.PostAsJsonAsync(
+                "/ui/login",
+                new { username }
+            );
+
+            if (!uiResponse.IsSuccessStatusCode)
+            {
+                error = "UI login failed";
+                return;
+            }
+
+            // 3. Navigate to protected page
+            Nav.NavigateTo("/chat", true);
+        }
+        catch(Exception exp)
+        {
+            var ErrorMsg = exp.ToString();
+        }
+    }
+}

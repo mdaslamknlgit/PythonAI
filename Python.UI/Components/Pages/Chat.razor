@@ -1,8 +1,12 @@
 @page "/chat"
+@attribute [Authorize]
 @rendermode InteractiveServer
 @inject HttpClient Http
+@using Microsoft.AspNetCore.Authorization
 @using Python.UI.Utils
 @using System.Text.Json
+@inject IJSRuntime JS
+@inject NavigationManager Nav
 
 
 <h3>Python AI Chat</h3>
@@ -87,6 +91,16 @@
             isLoading = false;
         }
     }
+
+    protected override async Task OnInitializedAsync()
+    {
+        var token = await JS.InvokeAsync<string>("localStorage.getItem", "jwt");
+        if (string.IsNullOrEmpty(token))
+        {
+            Nav.NavigateTo("/login");
+        }
+    }
+
 
     private void Clear()
     {
