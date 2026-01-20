@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="../Python.UI/Python.UI.csproj" />
+  <Project Path="Python.Blazor/Python.Blazor.csproj" />
+</Solution>

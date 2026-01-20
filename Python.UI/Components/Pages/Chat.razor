@@ -1,7 +1,10 @@
-@page "/chat"
+﻿@page "/chat"
 @attribute [Authorize]
 @rendermode InteractiveServer
 @inject HttpClient Http
+
+@inject IHttpClientFactory ClientFactory
+
 @using Microsoft.AspNetCore.Authorization
 @using Python.UI.Utils
 @using System.Text.Json
@@ -94,11 +97,11 @@
 
     protected override async Task OnInitializedAsync()
     {
-        var token = await JS.InvokeAsync<string>("localStorage.getItem", "jwt");
-        if (string.IsNullOrEmpty(token))
-        {
-            Nav.NavigateTo("/login");
-        }
+        // var token = await JS.InvokeAsync<string>("localStorage.getItem", "jwt");
+        // if (string.IsNullOrEmpty(token))
+        // {
+        //     Nav.NavigateTo("/login");
+        // }
     }
 
 
@@ -108,7 +111,7 @@
     }
 
 
-    private async Task Send()
+    private async Task SendB()
     {
         if (string.IsNullOrWhiteSpace(userInput))
             return;
@@ -144,5 +147,41 @@
     }
 
 
+    private async Task Send()
+    {
+        if (string.IsNullOrWhiteSpace(userInput))
+            return;
+
+        var userMessage = userInput;
+        userInput = "";
+
+        messages.Add(new ChatMessage { Role = "User", Content = userMessage });
+
+        var aiMessage = new ChatMessage { Role = "AI", Content = "Thinking..." };
+        messages.Add(aiMessage);
+
+        try
+        {
+            var client = ClientFactory.CreateClient("FastApiClient");
+
+            var response = await client.PostAsync(
+                $"ask?prompt={Uri.EscapeDataString(userMessage)}",
+                null);
+
+            response.EnsureSuccessStatusCode();
+
+            var json = await response.Content.ReadAsStringAsync();
+            using var doc = JsonDocument.Parse(json);
+
+            aiMessage.Content =
+                doc.RootElement.GetProperty("response").GetString() ?? "";
+        }
+        catch
+        {
+            aiMessage.Content = "Something went wrong.";
+        }
+
+        await InvokeAsync(StateHasChanged);
+    }
 
 }

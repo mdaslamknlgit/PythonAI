@@ -3,32 +3,24 @@
   "WorkspaceRootPath": "D:\\MdAslam\\Python\\Code\\PythonAI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A9CE986B-A887-737F-EFF1-25486115872B}|Python.UI\\Python.UI.csproj|d:\\mdaslam\\python\\code\\pythonai\\python.ui\\components\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A9CE986B-A887-737F-EFF1-25486115872B}|Python.UI\\Python.UI.csproj|solutionrelative:python.ui\\components\\pages\\login.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A9CE986B-A887-737F-EFF1-25486115872B}|Python.UI\\Python.UI.csproj|d:\\mdaslam\\python\\code\\pythonai\\python.ui\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A9CE986B-A887-737F-EFF1-25486115872B}|Python.UI\\Python.UI.csproj|solutionrelative:python.ui\\components\\routes.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9CE986B-A887-737F-EFF1-25486115872B}|Python.UI\\Python.UI.csproj|d:\\mdaslam\\python\\code\\pythonai\\python.ui\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A9CE986B-A887-737F-EFF1-25486115872B}|Python.UI\\Python.UI.csproj|solutionrelative:python.ui\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9CE986B-A887-737F-EFF1-25486115872B}|Python.UI\\Python.UI.csproj|d:\\mdaslam\\python\\code\\pythonai\\python.ui\\components\\pages\\logn.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A9CE986B-A887-737F-EFF1-25486115872B}|Python.UI\\Python.UI.csproj|solutionrelative:python.ui\\components\\pages\\logn.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A9CE986B-A887-737F-EFF1-25486115872B}|Python.UI\\Python.UI.csproj|d:\\mdaslam\\python\\code\\pythonai\\python.ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A9CE986B-A887-737F-EFF1-25486115872B}|Python.UI\\Python.UI.csproj|solutionrelative:python.ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A9CE986B-A887-737F-EFF1-25486115872B}|Python.UI\\Python.UI.csproj|d:\\mdaslam\\python\\code\\pythonai\\python.ui\\components\\pages\\chat.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A9CE986B-A887-737F-EFF1-25486115872B}|Python.UI\\Python.UI.csproj|solutionrelative:python.ui\\components\\pages\\chat.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A9CE986B-A887-737F-EFF1-25486115872B}|Python.UI\\Python.UI.csproj|d:\\mdaslam\\python\\code\\pythonai\\python.ui\\wwwroot\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A9CE986B-A887-737F-EFF1-25486115872B}|Python.UI\\Python.UI.csproj|solutionrelative:python.ui\\wwwroot\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A9CE986B-A887-737F-EFF1-25486115872B}|Python.UI\\Python.UI.csproj|d:\\mdaslam\\python\\code\\pythonai\\python.ui\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A9CE986B-A887-737F-EFF1-25486115872B}|Python.UI\\Python.UI.csproj|solutionrelative:python.ui\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A9CE986B-A887-737F-EFF1-25486115872B}|Python.UI\\Python.UI.csproj|d:\\mdaslam\\python\\code\\pythonai\\python.ui\\util\\markdown.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A9CE986B-A887-737F-EFF1-25486115872B}|Python.UI\\Python.UI.csproj|solutionrelative:python.ui\\util\\markdown.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A9CE986B-A887-737F-EFF1-25486115872B}|Python.UI\\Python.UI.csproj|d:\\mdaslam\\python\\code\\pythonai\\python.ui\\components\\pages\\weather.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A9CE986B-A887-737F-EFF1-25486115872B}|Python.UI\\Python.UI.csproj|solutionrelative:python.ui\\components\\pages\\weather.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A9CE986B-A887-737F-EFF1-25486115872B}|Python.UI\\Python.UI.csproj|d:\\mdaslam\\python\\code\\pythonai\\python.ui\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9CE986B-A887-737F-EFF1-25486115872B}|Python.UI\\Python.UI.csproj|solutionrelative:python.ui\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 463,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,88 +66,68 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "App.razor",
-              "DocumentMoniker": "D:\\MdAslam\\Python\\Code\\PythonAI\\Python.UI\\Components\\App.razor",
-              "RelativeDocumentMoniker": "Python.UI\\Components\\App.razor",
-              "ToolTip": "D:\\MdAslam\\Python\\Code\\PythonAI\\Python.UI\\Components\\App.razor",
-              "RelativeToolTip": "Python.UI\\Components\\App.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-19T11:50:07.543Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Login.razor",
-              "DocumentMoniker": "D:\\MdAslam\\Python\\Code\\PythonAI\\Python.UI\\Components\\Pages\\Login.razor",
-              "RelativeDocumentMoniker": "Python.UI\\Components\\Pages\\Login.razor",
-              "ToolTip": "D:\\MdAslam\\Python\\Code\\PythonAI\\Python.UI\\Components\\Pages\\Login.razor",
-              "RelativeToolTip": "Python.UI\\Components\\Pages\\Login.razor",
-              "ViewState": "AgIAADcAAAAAAAAAAAAqwEcAAAAMAAAAAAAAAA==",
+              "Title": "Routes.razor",
+              "DocumentMoniker": "D:\\MdAslam\\Python\\Code\\PythonAI\\Python.UI\\Components\\Routes.razor",
+              "RelativeDocumentMoniker": "Python.UI\\Components\\Routes.razor",
+              "ToolTip": "D:\\MdAslam\\Python\\Code\\PythonAI\\Python.UI\\Components\\Routes.razor",
+              "RelativeToolTip": "Python.UI\\Components\\Routes.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-19T11:49:48.458Z",
+              "WhenOpened": "2026-01-20T06:01:12.1Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Markdown.cs",
-              "DocumentMoniker": "D:\\MdAslam\\Python\\Code\\PythonAI\\Python.UI\\Util\\Markdown.cs",
-              "RelativeDocumentMoniker": "Python.UI\\Util\\Markdown.cs",
-              "ToolTip": "D:\\MdAslam\\Python\\Code\\PythonAI\\Python.UI\\Util\\Markdown.cs",
-              "RelativeToolTip": "Python.UI\\Util\\Markdown.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Home.razor",
+              "DocumentMoniker": "D:\\MdAslam\\Python\\Code\\PythonAI\\Python.UI\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "Python.UI\\Components\\Pages\\Home.razor",
+              "ToolTip": "D:\\MdAslam\\Python\\Code\\PythonAI\\Python.UI\\Components\\Pages\\Home.razor",
+              "RelativeToolTip": "Python.UI\\Components\\Pages\\Home.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-20T05:58:41.374Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\MdAslam\\Python\\Code\\PythonAI\\Python.UI\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Python.UI\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\MdAslam\\Python\\Code\\PythonAI\\Python.UI\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Python.UI\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBAAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-19T11:21:48.53Z"
+              "WhenOpened": "2026-01-20T05:56:14.257Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Logn.razor",
+              "DocumentMoniker": "D:\\MdAslam\\Python\\Code\\PythonAI\\Python.UI\\Components\\Pages\\Logn.razor",
+              "RelativeDocumentMoniker": "Python.UI\\Components\\Pages\\Logn.razor",
+              "ToolTip": "D:\\MdAslam\\Python\\Code\\PythonAI\\Python.UI\\Components\\Pages\\Logn.razor",
+              "RelativeToolTip": "Python.UI\\Components\\Pages\\Logn.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-20T05:56:12.076Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "app.css",
-              "DocumentMoniker": "D:\\MdAslam\\Python\\Code\\PythonAI\\Python.UI\\wwwroot\\app.css",
-              "RelativeDocumentMoniker": "Python.UI\\wwwroot\\app.css",
-              "ToolTip": "D:\\MdAslam\\Python\\Code\\PythonAI\\Python.UI\\wwwroot\\app.css",
-              "RelativeToolTip": "Python.UI\\wwwroot\\app.css",
-              "ViewState": "AgIAAFUAAAAAAAAAAAAAwGUAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-01-19T11:14:43.489Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Weather.razor",
-              "DocumentMoniker": "D:\\MdAslam\\Python\\Code\\PythonAI\\Python.UI\\Components\\Pages\\Weather.razor",
-              "RelativeDocumentMoniker": "Python.UI\\Components\\Pages\\Weather.razor",
-              "ToolTip": "D:\\MdAslam\\Python\\Code\\PythonAI\\Python.UI\\Components\\Pages\\Weather.razor",
-              "RelativeToolTip": "Python.UI\\Components\\Pages\\Weather.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-19T10:58:57.872Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\MdAslam\\Python\\Code\\PythonAI\\Python.UI\\Program.cs",
               "RelativeDocumentMoniker": "Python.UI\\Program.cs",
               "ToolTip": "D:\\MdAslam\\Python\\Code\\PythonAI\\Python.UI\\Program.cs",
               "RelativeToolTip": "Python.UI\\Program.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAuwCIAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-19T10:56:40.054Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Chat.razor",
-              "DocumentMoniker": "D:\\MdAslam\\Python\\Code\\PythonAI\\Python.UI\\Components\\Pages\\Chat.razor",
-              "RelativeDocumentMoniker": "Python.UI\\Components\\Pages\\Chat.razor",
-              "ToolTip": "D:\\MdAslam\\Python\\Code\\PythonAI\\Python.UI\\Components\\Pages\\Chat.razor",
-              "RelativeToolTip": "Python.UI\\Components\\Pages\\Chat.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-01-19T10:31:17.357Z"
+              "WhenOpened": "2026-01-20T05:56:05.55Z",
+              "EditorCaption": ""
             }
           ]
         },

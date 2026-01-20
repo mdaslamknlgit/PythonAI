@@ -1,0 +1,188 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\MdAslam\\Python\\Code\\PythonAI\\Python.Blazor\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E55898EF-474C-CFED-D9E7-980173D9F567}|..\\Python.UI\\Python.UI.csproj|d:\\mdaslam\\python\\code\\pythonai\\python.ui\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E55898EF-474C-CFED-D9E7-980173D9F567}|..\\Python.UI\\Python.UI.csproj|d:\\mdaslam\\python\\code\\pythonai\\python.ui\\handlers\\apiauthorizationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E55898EF-474C-CFED-D9E7-980173D9F567}|..\\Python.UI\\Python.UI.csproj|d:\\mdaslam\\python\\code\\pythonai\\python.ui\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E55898EF-474C-CFED-D9E7-980173D9F567}|..\\Python.UI\\Python.UI.csproj|d:\\mdaslam\\python\\code\\pythonai\\python.ui\\components\\pages\\chat.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E55898EF-474C-CFED-D9E7-980173D9F567}|..\\Python.UI\\Python.UI.csproj|d:\\mdaslam\\python\\code\\pythonai\\python.ui\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E55898EF-474C-CFED-D9E7-980173D9F567}|..\\Python.UI\\Python.UI.csproj|d:\\mdaslam\\python\\code\\pythonai\\python.ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E55898EF-474C-CFED-D9E7-980173D9F567}|..\\Python.UI\\Python.UI.csproj|d:\\mdaslam\\python\\code\\pythonai\\python.ui\\components\\pages\\logn.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 463,
+          "SelectedChildIndex": 13,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "D:\\MdAslam\\Python\\Code\\PythonAI\\Python.UI\\Components\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "..\\Python.UI\\Components\\Layout\\MainLayout.razor",
+              "ToolTip": "D:\\MdAslam\\Python\\Code\\PythonAI\\Python.UI\\Components\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "..\\Python.UI\\Components\\Layout\\MainLayout.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-20T06:50:00.275Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ApiAuthorizationHandler.cs",
+              "DocumentMoniker": "D:\\MdAslam\\Python\\Code\\PythonAI\\Python.UI\\Handlers\\ApiAuthorizationHandler.cs",
+              "RelativeDocumentMoniker": "..\\Python.UI\\Handlers\\ApiAuthorizationHandler.cs",
+              "ToolTip": "D:\\MdAslam\\Python\\Code\\PythonAI\\Python.UI\\Handlers\\ApiAuthorizationHandler.cs",
+              "RelativeToolTip": "..\\Python.UI\\Handlers\\ApiAuthorizationHandler.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAqwBwAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-20T06:35:44.673Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Chat.razor",
+              "DocumentMoniker": "D:\\MdAslam\\Python\\Code\\PythonAI\\Python.UI\\Components\\Pages\\Chat.razor",
+              "RelativeDocumentMoniker": "..\\Python.UI\\Components\\Pages\\Chat.razor",
+              "ToolTip": "D:\\MdAslam\\Python\\Code\\PythonAI\\Python.UI\\Components\\Pages\\Chat.razor",
+              "RelativeToolTip": "..\\Python.UI\\Components\\Pages\\Chat.razor",
+              "ViewState": "AgIAAKcAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-20T06:28:50.992Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Home.razor",
+              "DocumentMoniker": "D:\\MdAslam\\Python\\Code\\PythonAI\\Python.UI\\Components\\Pages\\Home.razor",
+              "RelativeDocumentMoniker": "..\\Python.UI\\Components\\Pages\\Home.razor",
+              "ToolTip": "D:\\MdAslam\\Python\\Code\\PythonAI\\Python.UI\\Components\\Pages\\Home.razor",
+              "RelativeToolTip": "..\\Python.UI\\Components\\Pages\\Home.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-20T06:27:46.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Logn.razor",
+              "DocumentMoniker": "D:\\MdAslam\\Python\\Code\\PythonAI\\Python.UI\\Components\\Pages\\Logn.razor",
+              "RelativeDocumentMoniker": "..\\Python.UI\\Components\\Pages\\Logn.razor",
+              "ToolTip": "D:\\MdAslam\\Python\\Code\\PythonAI\\Python.UI\\Components\\Pages\\Logn.razor",
+              "RelativeToolTip": "..\\Python.UI\\Components\\Pages\\Logn.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-01-20T06:27:20.889Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\MdAslam\\Python\\Code\\PythonAI\\Python.UI\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "..\\Python.UI\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\MdAslam\\Python\\Code\\PythonAI\\Python.UI\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "..\\Python.UI\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAUwEkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-20T06:27:07.565Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\MdAslam\\Python\\Code\\PythonAI\\Python.UI\\Program.cs",
+              "RelativeDocumentMoniker": "..\\Python.UI\\Program.cs",
+              "ToolTip": "D:\\MdAslam\\Python\\Code\\PythonAI\\Python.UI\\Program.cs",
+              "RelativeToolTip": "..\\Python.UI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-20T06:36:04.39Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedHeight": 259,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 226,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
