@@ -1,75 +1,33 @@
-﻿@page "/loginn"
-@attribute [AllowAnonymous]
+﻿@page "/login"
 @rendermode InteractiveServer
-
-@using Microsoft.AspNetCore.Authorization
 @inject HttpClient Http
 @inject NavigationManager Nav
 
-<div class="login-container">
-    <div class="login-card">
-        <h2>Sign in</h2>
+<h3>Login</h3>
 
-        <input placeholder="Username"
-               @bind="username"
-               @bind:event="oninput" />
-
-        <input type="password"
-               placeholder="Password"
-               @bind="password"
-               @bind:event="oninput" />
-
-        <button @onclick="DoLogin">Login</button>
-
-        @if (!string.IsNullOrEmpty(error))
-        {
-            <div class="login-error">@error</div>
-        }
-    </div>
-</div>
+<input @bind="username" placeholder="Username" />
+<input @bind="password" type="password" />
+<button @onclick="DoLogin">Login</button>
 
 @code {
-    private string username = "";
-    private string password = "";
-    private string error = "";
+    string username = "admin";
+    string password = "admin";
 
     private async Task DoLogin()
     {
-        error = "";
-
-        try
-        {
-
-            // 1. Authenticate with Python API
-            var pythonResponse = await Http.PostAsync(
-                $"http://127.0.0.1:8000/auth/login?username={Uri.EscapeDataString(username)}&password={Uri.EscapeDataString(password)}",
-                null
-            );
-
-            if (!pythonResponse.IsSuccessStatusCode)
+        var content = new FormUrlEncodedContent(
+            new Dictionary<string, string>
             {
-                error = "Invalid username or password";
-                return;
-            }
+                ["username"] = username,
+                ["password"] = password
+            });
 
-            // 2. Sign in Blazor (cookie)
-            var uiResponse = await Http.PostAsJsonAsync(
-                "/ui/login",
-                new { username }
-            );
+        var response = await Http.PostAsync("/auth/login", content);
 
-            if (!uiResponse.IsSuccessStatusCode)
-            {
-                error = "UI login failed";
-                return;
-            }
-
-            // 3. Navigate to protected page
-            Nav.NavigateTo("/chat", true);
-        }
-        catch(Exception exp)
+        if (response.IsSuccessStatusCode)
         {
-            var ErrorMsg = exp.ToString();
+            // 🔑 THIS IS THE FIX
+            Nav.NavigateTo("/", forceLoad: true);
         }
     }
 }

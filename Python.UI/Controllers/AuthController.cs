@@ -1,11 +1,12 @@
 ﻿using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Components;
 using System.Security.Claims;
 using System.Text.Json;
 
 [ApiController]
-[Route("auth")]
+[Microsoft.AspNetCore.Mvc.Route("auth")]
 public class AuthController : ControllerBase
 {
     private readonly IHttpClientFactory _httpClientFactory;
@@ -15,14 +16,13 @@ public class AuthController : ControllerBase
         _httpClientFactory = httpClientFactory;
     }
 
-    [HttpPost("login")]
+    [Microsoft.AspNetCore.Mvc.HttpPost("login")]
     public async Task<IActionResult> Login(
-        [FromForm] string username,
-        [FromForm] string password)
+      [FromForm] string username,
+      [FromForm] string password)
     {
         var client = _httpClientFactory.CreateClient();
 
-        // Call FastAPI using QUERY STRING (as required)
         var url =
             $"http://127.0.0.1:8000/auth/login?username={username}&password={password}";
 
@@ -41,14 +41,14 @@ public class AuthController : ControllerBase
         if (string.IsNullOrEmpty(accessToken))
             return Unauthorized();
 
-        // Store JWT in session
+        // store JWT (for API calls later)
         HttpContext.Session.SetString("access_token", accessToken);
 
-        // Create cookie authentication
+        // COOKIE AUTH (THIS IS WHAT MATTERS FOR BLAZOR)
         var claims = new[]
         {
-            new Claim(ClaimTypes.Name, username)
-        };
+        new Claim(ClaimTypes.Name, username)
+    };
 
         var identity = new ClaimsIdentity(
             claims,
@@ -58,10 +58,12 @@ public class AuthController : ControllerBase
             CookieAuthenticationDefaults.AuthenticationScheme,
             new ClaimsPrincipal(identity));
 
-        return Redirect("/");
+        // IMPORTANT: no Redirect here
+        return Ok();
     }
 
-    [HttpGet("logout")]
+
+    [Microsoft.AspNetCore.Mvc.HttpGet("logout")]
     public async Task<IActionResult> Logout()
     {
         HttpContext.Session.Clear();

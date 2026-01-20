@@ -29,6 +29,7 @@ def login(username: str, password: str):
     token = create_access_token(username)
     return {
         "access_token": token,
+        "username": username,
         "token_type": "bearer"
     }
 

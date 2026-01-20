@@ -1,0 +1,35 @@
+﻿@page "/profile"
+@attribute [Authorize]
+
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Components.Authorization
+@inject AuthenticationStateProvider AuthStateProvider
+
+<h3>Profile</h3>
+
+@if (!isLoaded)
+{
+    <p>Loading...</p>
+}
+else
+{
+    <p>Username: @username</p>
+    <p>Authenticated: @isAuthenticated</p>
+}
+
+@code {
+    bool isLoaded;
+    bool isAuthenticated;
+    string? username;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var authState = await AuthStateProvider.GetAuthenticationStateAsync();
+        var user = authState.User;
+
+        isAuthenticated = user.Identity?.IsAuthenticated ?? false;
+        username = user.Identity?.Name;
+
+        isLoaded = true;
+    }
+}

@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Components.Authorization;
 using Python.UI.Components;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -19,8 +20,8 @@ builder.Services
     .AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie(options =>
     {
-        options.LoginPath = "/logn";
-        options.AccessDeniedPath = "/logn";
+        options.LoginPath = "/login";
+        options.AccessDeniedPath = "/login";
     });
 
 builder.Services.AddAuthorization();
@@ -37,6 +38,9 @@ builder.Services.AddHttpClient("FastApiClient", client =>
 
 // Controllers (AuthController)
 builder.Services.AddControllers();
+
+//builder.Services.AddScoped<AuthenticationStateProvider, CustomAuthStateProvider>();
+
 
 var app = builder.Build();
 

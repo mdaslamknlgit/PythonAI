@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Python.UI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eb8486f9f266abbcd81383c9dc2ddfd08bc39393")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3b6cb317e42b441a942303d3955b57d091ac2f83")]
 [assembly: System.Reflection.AssemblyProductAttribute("Python.UI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Python.UI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
